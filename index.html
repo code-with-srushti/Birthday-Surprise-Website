@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>💓</span>
+</div>
+<div class="balloons">
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+</div>
+<div class="sparkles">
+    <span>✨</span>
+    <span>⭐</span>
+    <span>✨</span>
+    <span>🌟</span>
+    <span>✨</span>
+    <span>⭐</span>
+</div>
+<div class="container">
+  <h1>🎉 Happy Birthday ❤️</h1>
+  <h2>🎂 Happy Birthday 🎂</h2>
+<p>💖 A Special Surprise Just For You 💖</p>
+  <img src="image/birthday_bunny.187huk4x5024o.webp" width="180">
+  <p>Welcome to your special surprise!</p>
+
+  <button onclick="showMessage()">Open Surprise 🎁</button>
+  <div id="message" style="display:none;">
+    <h2>💌 Happy Birthday My Favourite Person 💖</h2>
+
+    <p>
+        I hope your day is filled with happiness, love and lots of smiles. 🥹❤️<br><br>
+        Thank you for being such a special person in my life. 🌸<br><br>
+        May all your dreams come true. 🎂🎉
+    </p>
+</div>
+
+<div id="gift" style="display:none;">
+    <h2>🎁 A Gift For You 🎁</h2>
+    <button onclick="openGift()">Open Gift 🎁</button>
+</div>
+
+<div id="letter" style="display:none;">
+    <h2>💌 A Letter Just For You 💌</h2>
+
+    <p id="typing"></p>
+
+    <button onclick="showBalloonGame()">Next 🎈</button>
+</div>
+
+<div id="balloonGame"
+style="display: none;">
+    <h2>🎈 Pop All the Balloons 🎈</h2>
+
+    <div class="game-area">
+        <div class="pop-balloon" onclick="popBalloon(this)">🎈</div>
+        <div class="pop-balloon" onclick="popBalloon(this)">🎈</div>
+        <div class="pop-balloon" onclick="popBalloon(this)">🎈</div>
+        <div class="pop-balloon" onclick="popBalloon(this)">🎈</div>
+        <div class="pop-balloon" onclick="popBalloon(this)">🎈</div>
+        <button id="cakeBtn" onclick="showCake()" style="display:none;">
+    Next 🎂
+</button>
+    </div>
+    
+</div>
+<div id="cakeSection" style="display:none;">
+
+    <h2>🎂 Make a Birthday Wish 🎂</h2>
+
+    <div class="cake-container">
+
+        <img src="image/cake.png" id="cakeImage">
+
+    </div>
+
+    <button onclick="blowCandles()">💨 Blow Candles</button>
+    <button onclick="showGiftBox()">Next 🎁</button>
+
+</div>
+
+<div id="gift-box" style="display:none;" onclick="openLastGift()">
+    🎁
+</div>
+<div id="gift-message">
+    💖 A Special Gift For You 💖
+    <br>
+    🎉 You are Amazing! 🎉
+</div>
+</div>
+
+<div id="videoSection"
+style="display:none;">
+
+    <h2>🎬 A Special Video For You ❤️</h2>
+
+    <video id="birthdayVideo" controls width="320">
+        <source src="videos/birthday.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+<div id="musicControl">
+    <button onclick="playMusic()">🎵 Play Music</button>
+    <button onclick="pauseMusic()">⏸️ Pause Music</button>
+</div>
+<div id="qrSection"
+style="display:none;">
+
+    <h2>📷 Scan For Birthday Surprise ❤️</h2>
+
+    <img id="qrCode" 
+    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourwebsite-link.com">
+
+    <p>Share this QR Code 🎁</p>
+
+</div>
+
+<div id="shareSection">
+
+    <button onclick="shareWebsite()">
+        🌐 Share Surprise
+    </button>
+
+</div>
+<audio id="bgMusic" loop>
+  <source src="music/nastelbom-happy-birthday-471481.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+<div id="confetti-container"></div>
+<div id="hearts-container"></div>
+<div id="sparkle-container"></div>
+</body>
+</html>
